@@ -1,0 +1,36 @@
+###
+POST http://127.0.0.1:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+"nombre":"Alain Larrada",
+"usuario":"alarradar",
+"email":"alacho93@noescierto.com",
+"emcontraseña":"12345"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+POST http://127.0.0.1:9000/api/ordenes HTTP/1.1
+Content-Type: application/json
+
+{
+
+"date":"01/02/2022",
+"largo": "25",
+"alto": "30",
+"ancho": "30",
+"peso": "15",
+"dirRecogida":"calle 14f 324a 22",
+"ciudadRecogida":"Sprinfield",
+"nombreDestinatario":"Supernintendo charmemr",
+"ccDestinatario":"1118845090",
+"dirDestinatario":"primaria Sprinfield",
+"ciudadDestinatario":"South Park"
+
+}
+
+###
+GET http://localhost:9000/api/ordenes HTTP/1.1

@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+ api:
+   restart: unless-stopped
+   build:
+   environment:
+    - NODE_ENV=production
+   ports:
+     - 9000:9000
+   # volumes:
